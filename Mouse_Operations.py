@@ -32,8 +32,6 @@ def GUI(action_list):
     #Automating creation of buttons
     max_rows=3
     cols=m.ceil(len(action_list)/max_rows)
-    '''for i in range (len(action_list)): 
-        label1= Button(gui,text=action_list[i],padx=50,pady=50) #Creating Buttons for each element in action_list'''
 
     for i in range (max_rows):
         for j in range (cols):
