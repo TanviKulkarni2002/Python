@@ -6,14 +6,8 @@ import mouse
 from pynput .mouse import Listener
 import math as m
 
+print("*****   MOUSE OPERATIONS INITIATED  *****")
 
-action_list=['Record Single Click', 'Record Double Click', 'Type Text at position', 'Record Mouse Action',
-                'Delete [Step-1]', 'Show all steps', 'Quit']
-
-print("*****   Automation Started   *****")
-
-secDelay     = 2 #secs
-actions=[] #list to store histories and actions
 
 #Single Mouse Click + Scroll Recording
 def mouseOps():
@@ -30,7 +24,7 @@ def on_scroll(x,y,dx,dy): #Scrolls
 
 
 #GUI Creation
-def new_GUI(action_list):
+def GUI(action_list):
     
     gui=Tk() #The pop up widget window is initialised
     gui.title("Automation")
@@ -58,8 +52,4 @@ def new_GUI(action_list):
 
     gui.mainloop() #Creates the loop for the gui widget window
 
-new_GUI(action_list)
-
-
-
-
+GUI(action_list)
