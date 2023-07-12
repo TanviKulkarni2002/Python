@@ -6,7 +6,7 @@ import mouse
 from pynput .mouse import Listener
 import math as m
 
-print("*****   MOUSE OPERATIONS INITIATED  *****")
+print("*****   MOUSE OPERATIONS INITIATED   *****")
 
 
 #Single Mouse Click + Scroll Recording
