@@ -1,6 +1,6 @@
 from tkinter import * #Import everything from Tkinter library
 import os,sys
-from pynput .mouse import Listener
+from pynput.mouse import Listener
 
 print("*****   MOUSE OPERATIONS INITIATED   *****")
 
