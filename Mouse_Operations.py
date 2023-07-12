@@ -1,10 +1,6 @@
 from tkinter import * #Import everything from Tkinter library
-import pyautogui as pg
-from collections import OrderedDict
 import os,sys
-import mouse
 from pynput .mouse import Listener
-import math as m
 
 print("*****   MOUSE OPERATIONS INITIATED   *****")
 
