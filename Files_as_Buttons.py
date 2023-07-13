@@ -24,5 +24,5 @@ def create_buttons(directory):
     
     root.mainloop()
 
-directory_path = "C:/Users/tanuk/OneDrive/Documents/Capgemini_Internship/automation"  # Actual directory path
+directory_path = ""  # Actual directory path
 create_buttons(directory_path)
