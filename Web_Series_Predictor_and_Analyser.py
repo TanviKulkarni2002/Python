@@ -113,5 +113,5 @@ test_df=test_df.drop(['Description'],axis=1)
 test_df=test_df.drop(['Streaming Platform'],axis=1)
 
 predicted_values=kmeans.predict(test_df)
-for i in predicted_values:
-  print(i)
+# for i in predicted_values:
+#   print(i)
