@@ -120,6 +120,9 @@ predicted_values=kmeans.fit_predict(test_df)
 from sklearn.metrics import silhouette_score, calinski_harabasz_score
 from sklearn.metrics import accuracy_score
 
+# Calculating the quality of clustering
+from sklearn.metrics import silhouette_score, calinski_harabasz_score
+from sklearn.metrics import accuracy_score
 # Calculate Silhouette Score
 silhouette_avg = silhouette_score(test_df,predicted_values)
 # Calculate Calinski-Harabasz Index
