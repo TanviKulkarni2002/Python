@@ -112,6 +112,17 @@ test_df=test_df.drop(['Genre'],axis=1)
 test_df=test_df.drop(['Description'],axis=1)
 test_df=test_df.drop(['Streaming Platform'],axis=1)
 
-predicted_values=kmeans.predict(test_df)
+predicted_values=kmeans.fit_predict(test_df)
 # for i in predicted_values:
 #   print(i)
+
+# Calculating the quality of clustering
+from sklearn.metrics import silhouette_score, calinski_harabasz_score
+from sklearn.metrics import accuracy_score
+
+# Calculate Silhouette Score
+silhouette_avg = silhouette_score(test_df,predicted_values)
+# Calculate Calinski-Harabasz Index
+ch_score = calinski_harabasz_score(test_df,predicted_values)
+print(silhouette_avg)
+print(ch_score)
